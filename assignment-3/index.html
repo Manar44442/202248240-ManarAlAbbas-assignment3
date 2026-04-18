@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A portfolio website showcasing web projects, applications, and contact information.">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manar's Profile</title>
+</head>
+
+<body>
+    <section class="header">
+        <header class="navbar">
+            <nav class="nav-links">
+                <!-- Defining the navigation links -->
+                <a href="#" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#github">GitHub</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <!-- Header section structure -->
+        <div class="profile-header">
+            <p id="greeting-text"><span id="name"></span></p>
+            <p class="time-spend">Time on site: <span id="timer">0</span> </p>
+        </div>
+        <h2> Welcome to Manar's Profile !</h2>
+        <div class="profile-box">
+            <div class="profile-pic-container">
+                <img src="assets\Picture1.png" width="300" height="300" class="profile-pic" alt = "profile picture">
+                <h3> Manar Al Abbas </h3>
+                <p> SWE student </p>
+                <p> KFUPM </p>
+            </div>
+            <div class="language">
+                <span class="tag cream_tag">Java</span>
+                <span class="tag peach_tag">C#</span>
+                <span class="tag rose_tag">Python</span>
+                <span class="tag taupe_tag">SQL</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- about me  section -->
+    <section id="about">
+        <h2>About me </h2>
+        <p class="text-box">
+            Software Engineering student at KFUPM with hands-on
+            experience in developing academic software projects,
+            including event management systems and database-driven
+            applications. Skilled in programming, SQL querying,
+            and database schema design, with a solid foundation in
+            UI/UX design. Demonstrated ability to collaborate
+            effectively in team environments and deliver structured,
+            well-documented solutions. Highly motivated to expand
+            technical expertise and apply engineering principles to
+            real-world problems.
+        </p>
+    </section>
+
+    <!-- projects section -->
+    <section id="projects">
+        <h2>Projects </h2>
+        <p class="Hint"> Hover on each project to see details </p>
+        <div class="projects">
+            <!-- 1st project -->
+            <div class="project card">
+                <img src="assets\digital-nomad-hub.png" alt = "project image">
+                <h3>KFUPM STUDENT IMPACT HUB SYSTEM </h3>
+                <p>A prototype for KFUPM event management system that allow for admins to add, modify and delete events,
+                    while users can register for opportunities and withdraw.</p>
+            </div>
+            <!-- 2nd project -->
+            <div class="project card">
+                <img src="assets\equestrian.png" alt="project image">
+                <h3>HORSE RACING DATABASE SYSTEM</h3>
+                <p>A database management system that enables administrators to add races and results, remove owners and
+                    related data, transfer horses between stables, approve trainers, and delete horses. Users can browse
+                    horses by owner’s last name, view trainers of winning horses, see each trainer’s total prize
+                    winnings, and list race tracks with the number of races and participating horses.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills  section-->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill card">
+                <img src="assets\programming.png" alt="skill image">
+                <p>Programming </p>
+                <div class="language">
+                    <span class="tag cream_tag">Java</span>
+                    <span class="tag peach_tag">C#</span>
+                    <span class="tag rose_tag">Python</span>
+                </div>
+            </div>
+            <div class="skill card">
+                <img src="assets\coding.png" alt="skill image">
+                <p>UI/UX Designing </p>
+                <div class="language">
+                    <span class="tag cream_tag">Figma</span>
+                </div>
+            </div>
+            <div class="skill card">
+                <img src="assets\database.png" alt="skill image">
+                <p>Databases</p>
+                <div class="language">
+                    <span class="tag cream_tag">SQL Querying</span>
+                    <span class="tag peach_tag">Schema initialization</span>
+                </div>
+            </div>
+            <div class="skill card">
+                <img src="assets\arabic.png" alt="skill image">
+                <p>English </p>
+                <div class="language">
+                    <span class="tag cream_tag">IELTS 6.0</span>
+                </div>
+            </div>
+            <div class="skill card">
+                <img src="assets\coding.png" alt="skill image">
+                <p>Web Development</p>
+                <div class="language">
+                    <span class="tag cream_tag">HTML</span>
+                    <span class="tag peach_tag">CSS</span>
+                    <span class="tag rose_tag">JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub section-->
+    <section id="github">
+        <div class="GitHub">
+            <h2>GitHub</h2>
+            <div id="profile"></div>
+            <div class="card">
+                <div id="repos"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact  section-->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form class="contact-form">
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="email@example.com">
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea rows="6" placeholder="Enter your message here..."></textarea>
+            </div>
+
+            <button class="submit-btn">Send Message</button>
+
+        </form>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,407 @@
+/* Defining general styles and variables for the webpage, including colors, font and layout proprties */
+:root {
+  --plum: #5b4c57;
+  --taupe: #a89c9c;
+  --rose: #b37476;
+  --peach: #f0b094;
+  --cream: #f7ecd9;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+/* General proprties for level 2 heading */
+h2 {
+  margin-top: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 80px;
+  color: var(--plum);
+}
+
+/* Styling the header of the webpage, including the background image, size and position */
+.header {
+  background-image: url("../assets/Header pic.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.header h2 {
+  color: white;
+}
+
+/* Greating text in the first page */
+#greeting-text,
+.time-spend {
+  color: var(--cream);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Proprtes for each section of the webpage, including layout, spacing, and text alignment */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  scroll-snap-align: start;
+  text-align: center;
+  gap: 30px;
+}
+
+/* Coding language containers and the container of the tags  */
+.language {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* Warppign each language with a tag */
+.tag {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  letter-spacing: 0.01em;
+  color: var(--plum);
+}
+
+.cream_tag {
+  background-color: var(--cream);
+}
+
+.peach_tag {
+  background-color: var(--peach);
+}
+
+.rose_tag {
+  background-color: var(--rose);
+}
+
+.taupe_tag {
+
+  background-color: var(--taupe);
+}
+
+/* Defining the properties of the profile picture and the box that contains it, including size, border, and shadow effects */
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f7ecd9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-box {
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.profile-box:hover {
+  box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.15),
+    0 20px 40px rgba(0, 0, 0, 0.25),
+    0 40px 70px rgba(0, 0, 0, 0.35);
+}
+
+/* Proprtes for the navigation bar, including layout, spacing, colors, and hover interactions   */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  color: white;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+.nav-links .active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: white;
+}
+
+#about {
+  background-color: var(--cream);
+}
+
+/* A textbox for about me pargraph */
+.text-box {
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: flex-start;
+  font-size: 16px;
+  letter-spacing: 2px;
+  word-spacing: 0.5px;
+  font-weight: 500;
+  padding: 10px;
+  width: 90%;
+}
+
+/* General proprties for the cards used in the skills and projects sections, including background color, border radius, shadow effects, and hover interactions  */
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Proptres for the skills section, including the grid layout, spacing, and styling of each skill card  */
+/* Skills container */
+#skills {
+  background-color: var(--cream);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 95%;
+  margin: 40px auto;
+}
+
+/* Proprties for each skill card */
+.skill {
+  padding: 40px;
+  gap: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Cards interacting on hover  */
+.skill:hover {
+  transform: translateY(-10px) scale(1.05);
+}
+
+/* Skill card image styling */
+.skill img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+/* Project card styling, including layout, spacing, and hover interactions  */
+/* Projects container */
+.projects {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start
+}
+
+#projects {
+  background-color: var(--rose);
+}
+
+#projects h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* Each project card proprties */
+.project {
+  width: 300px;
+  min-height: 150px;
+  color: var(--rose);
+  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Cards interacting on hover  */
+.project:hover {
+  transform: translateY(-8px) scale(1.05);
+}
+
+/* Projects heading styling  */
+.project h3 {
+  margin: 5px 0 15px 0;
+  font-weight: 600;
+}
+
+.Hint {
+  color: white;
+  font-size: 20px;
+  margin-top: -20px;
+  font-style: bold;
+}
+
+.project img {
+  width: 100px;
+  height: auto;
+  margin: 30px;
+  max-width: 100%;
+}
+
+.project p {
+  margin-top: auto;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+/* Appearing the project description on hover   */
+.project:hover p {
+  opacity: 1;
+  max-height: 500px;
+}
+
+/* Form styling, including layout, spacing, colors, and interactions for the input fields and submit button   */
+#contact {
+  background-color: var(--peach);
+}
+
+#github {
+  background-color: var(--cream);
+}
+
+.GitHub {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #24292e;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #444;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+  width: 100%;
+}
+
+.form-group label {
+  color: var(--plum);
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1px;
+  align-items: center;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 20px;
+  border: 2px solid var(--plum);
+  border-radius: 8px;
+  background-color: white;
+  transition: all 0.3s ease;
+  width: 100%;
+  gap: 10px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--rose);
+  box-shadow: 0 0 8px rgba(179, 116, 118, 0.2);
+}
+
+.submit-btn {
+  background-color: var(--plum);
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s;
+  align-items: flex-start;
+}
+
+.submit-btn:hover {
+  background-color: var(--rose);
+  transform: translateY(-2px);
+}
