@@ -1,13 +1,13 @@
-1. Overview
+# Overview
 Personal portfolio webpage for Manar Al Abbas displaying profile, skills, projects, GitHub API, and contact form. Built with HTML, CSS, and JavaScript.
 
-2. Technologies
+# Technologies
 - HTML– Structure.
 - CSS – Styling and layout.
 - JavaScript – Dynamic greeting with visitor name, website time span and gitHub repos.
 - Google Fonts – Roboto, Public Sans.
 
-3. File structure
+# File structure
 assignment-1/
 ├── README.md
 ├── index.html
@@ -22,7 +22,7 @@ assignment-1/
 │   └── technical-documentation.md
 └── .gitignore
 
-4. Sections
+# Sections
 - Header: Navbar, profile box, dynamic greeting (#greeting-text) with visitor name, time span of usage.
 - About (#about): Paragraph with academic background.
 - Skills (#skills): Grid of skill cards with images and tags, hover effects.
@@ -38,7 +38,7 @@ assignment-1/
 - Forms: Styled inputs, textareas, and buttons with focus & hover effects.
 - GitHub Button: Custom-styled button that redirects users to GitHub profile.
 
-6. JavaScript
+# JavaScript
 - How it works: 
     - Displays morning, afternoon, or evening greeting based on the current hour.
     - Displays greeting with visitor name .
@@ -47,7 +47,7 @@ assignment-1/
     - Provide continuous user feedback during data loading and when data fails to fetch.
     - Provide buttons to navigate to the GitHub profile and individual repository links.   
 
-7. Features/ Functionality
+# Features/ Functionality
 - Greeting based on time (Morning/ afternoon/ evening).
 - Store user name and display it greeting message.
 - Displays time of website usage.
@@ -62,7 +62,7 @@ assignment-1/
 - Styled contact form.
 - Real-time user feedback.
  
- 8. User Experience
+ # User Experience
  The user can navigate throw sections using both scrolling and navigating bar in the first section.
 ## Home Section
 - Displays a greeting message based on the time of day with the visitor name.
@@ -87,7 +87,7 @@ assignment-1/
 - Users must enter their name and email address in the correct format for the form to be sent.
 - Users may optionally include a message.
 
-9. Implemented functionalities for this assigment
+# Implemented functionalities for this assigment
 - Github repository.
 - Timer (how long a visitor has been on your site).
 - Store and display a visitor’s name.
